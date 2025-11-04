@@ -28,7 +28,7 @@ const OfferSection = () => {
       {/* Decorative leaf pattern at bottom */}
       <div className="absolute bottom-0 left-0 w-full h-40 bg-[url('/images/pattern.png')] bg-repeat-x bg-bottom  pointer-events-none"></div>
 
-      <div className="container mx-auto px-20 lg:px-20 text-center relative z-10">
+      <div className="container mx-auto px-10 lg:px-20 text-center relative z-10">
         {/* Section Header */}
         <motion.div 
           initial={{ opacity: 0, y: 40 }} 

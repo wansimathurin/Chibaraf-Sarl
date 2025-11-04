@@ -8,8 +8,8 @@ const NavBar = () => {
   const navLinks = ["Home", "About", "Services", "Projects", "Contact"];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-black/50 backdrop-blur-md border-b border-white/20 text-white">
-      <div className="max-w-7xl mx-auto px-5 md:px-10 h-[70px] flex items-center justify-between">
+    <nav className="fixed top-0 left-0 w-full z-50  bg-black/50 backdrop-blur-md border-b border-white/20 text-white">
+      <div className="max-w-7xl mx-auto px-5 md:px-10 h-[10px] pt-10 md:pt-0 md:h-[70px] flex items-center justify-between">
         {/* Logo */}
         <img src="/images/logo-white.png" width="150" alt="logo" className="cursor-pointer" />
 

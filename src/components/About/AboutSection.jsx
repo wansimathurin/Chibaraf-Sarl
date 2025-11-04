@@ -5,14 +5,14 @@ const AboutSection = () => {
   return (
     <section 
       id="about" 
-      className="relative py-20 bg-white overflow-hidden"
+      className="relative py-20  bg-white overflow-hidden"
     >
       {/* Decorative Leaf Pattern at Bottom */}
       <div 
-        className="absolute bottom-0 -left-40 w-full h-50 bg-[url('/images/pattern-2.png')] bg-no-repeat bg-bottom  pointer-events-none"
+        className="absolute bottom-0 md:-left-40 w-full h-50 bg-[url('/images/pattern-2.png')] bg-no-repeat bg-bottom  pointer-events-none"
       ></div>
 
-      <div className="relative container mx-auto px-20 grid md:grid-cols-2 gap-10 items-center">
+      <div className="relative container mx-auto px-5 md:px-20 grid md:grid-cols-2 gap-10 items-center">
         
         {/* Left Text Content */}
         <motion.div 
@@ -37,7 +37,7 @@ const AboutSection = () => {
 
         {/* Right Image Content */}
         <motion.div 
-          className="relative flex gap-6"
+          className="relative flex gap-2 md:gap-6"
           initial={{ opacity: 0, y: 40 }} 
           whileInView={{ opacity: 1, y: 0 }} 
           transition={{ duration: 0.8, delay: 0.2 }}
