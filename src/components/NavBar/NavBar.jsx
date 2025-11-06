@@ -1,5 +1,6 @@
 "use client";
 import { Facebook, Instagram, Linkedin, Phone, Search, Menu, X } from "lucide-react";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const NavBar = () => {
@@ -16,13 +17,14 @@ const NavBar = () => {
         {/* Desktop Links */}
         <ul className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
-            <li
+            <Link
+              href={link=="Home"?'/':link.toLowerCase()}
               key={link}
               className="font-medium relative group cursor-pointer transition-all"
             >
               {link}
               <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span>
-            </li>
+            </Link>
           ))}
         </ul>
 

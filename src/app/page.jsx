@@ -3,6 +3,7 @@ import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
 import ServicesSection from "@/components/ServiceSection/ServiceSection";
 import Team from "@/components/TeamSection/TeamSection";
+import Testimonial from "@/components/Testimonial/Testimonial";
 import OfferSection from "@/components/WhatWeOffer/WhatWeOffer";
 import Image from "next/image";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <OfferSection />
       <ServicesSection />
       <Team />
+      <Testimonial />
       <Footer />
     </div>
   );

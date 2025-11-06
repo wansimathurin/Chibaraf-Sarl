@@ -1,6 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import { Facebook, Instagram, Linkedin, Phone, Mail, MapPin, MessageCircle } from 'lucide-react'
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -35,10 +36,10 @@ const Footer = () => {
         >
           <h4 className="text-lg font-semibold mb-4 text-white">Quick Links</h4>
           <ul className="space-y-3 text-gray-300 text-sm">
-            <li><a href="#home" className="hover:text-white transition">Home</a></li>
-            <li><a href="#about" className="hover:text-white transition">About</a></li>
-            <li><a href="#services" className="hover:text-white transition">Services</a></li>
-            <li><a href="#contact" className="hover:text-white transition">Contact</a></li>
+            <li><Link href="home" className="hover:text-white transition">Home</Link></li>
+            <li><Link href="about" className="hover:text-white transition">About</Link></li>
+            <li><Link href="services" className="hover:text-white transition">Services</Link></li>
+            <li><Link href="contact" className="hover:text-white transition">Contact</Link></li>
           </ul>
         </motion.div>
 
