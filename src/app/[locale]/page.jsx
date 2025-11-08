@@ -7,7 +7,7 @@ import Testimonial from "@/components/Testimonial/Testimonial";
 import OfferSection from "@/components/WhatWeOffer/WhatWeOffer";
 import Image from "next/image";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className="h-screen w-full">
       <Hero />

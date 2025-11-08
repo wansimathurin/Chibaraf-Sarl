@@ -1,61 +1,88 @@
-'use client'
-import { useState } from 'react'
+"use client";
+import { useTranslations } from "next-intl";
+import { useState } from "react";
 
 export default function ContactForm() {
-  const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })
-  const [status, setStatus] = useState({ loading: false, error: '', success: '' })
+  const t = useTranslations("contact.form");
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [status, setStatus] = useState({
+    loading: false,
+    error: "",
+    success: "",
+  });
 
-  const handleChange = (e) => setForm((s) => ({ ...s, [e.target.name]: e.target.value }))
+  const handleChange = (e) =>
+    setForm((s) => ({ ...s, [e.target.name]: e.target.value }));
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    setStatus({ loading: true, error: '', success: '' })
+    e.preventDefault();
+    setStatus({ loading: true, error: "", success: "" });
 
-    // Basic client validation
     if (!form.name || !form.email || !form.message) {
-      setStatus({ loading: false, error: 'Please provide name, email and message.', success: '' })
-      return
+      setStatus({
+        loading: false,
+        error: t("validation.required"),
+        success: "",
+      });
+      return;
     }
 
     try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
-      })
+      });
 
       if (!res.ok) {
-        const data = await res.json().catch(() => ({}))
-        throw new Error(data?.error || 'Submission failed')
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data?.error || t("validation.error"));
       }
 
-      setForm({ name: '', email: '', subject: '', message: '' })
-      setStatus({ loading: false, error: '', success: 'Thanks — we will get back to you shortly.' })
+      setForm({ name: "", email: "", subject: "", message: "" });
+      setStatus({
+        loading: false,
+        error: "",
+        success: t("validation.success"),
+      });
     } catch (err) {
-      setStatus({ loading: false, error: err.message || 'Submission failed', success: '' })
+      setStatus({
+        loading: false,
+        error: err.message || t("validation.error"),
+        success: "",
+      });
     }
-  }
+  };
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4" noValidate>
-      {status.error && <div className="text-sm text-red-600">{status.error}</div>}
-      {status.success && <div className="text-sm text-green-700">{status.success}</div>}
+      {status.error && (
+        <div className="text-sm text-red-600">{status.error}</div>
+      )}
+      {status.success && (
+        <div className="text-sm text-green-700">{status.success}</div>
+      )}
 
       <div className="grid md:grid-cols-2 gap-4">
         <label className="flex flex-col">
-          <span className="text-sm text-gray-600 mb-2">Name*</span>
+          <span className="text-sm text-gray-600 mb-2">{t("name.label")}</span>
           <input
             name="name"
             value={form.name}
             onChange={handleChange}
             required
             className="px-4 py-3 rounded-lg border focus:ring-2 focus:ring-green-200 outline-none"
-            placeholder="Your full name"
+            placeholder={t("name.placeholder")}
           />
         </label>
 
         <label className="flex flex-col">
-          <span className="text-sm text-gray-600 mb-2">Email*</span>
+          <span className="text-sm text-gray-600 mb-2">{t("email.label")}</span>
           <input
             name="email"
             type="email"
@@ -63,24 +90,24 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             className="px-4 py-3 rounded-lg border focus:ring-2 focus:ring-green-200 outline-none"
-            placeholder="you@company.com"
+            placeholder={t("email.placeholder")}
           />
         </label>
       </div>
 
       <label className="flex flex-col">
-        <span className="text-sm text-gray-600 mb-2">Subject</span>
+        <span className="text-sm text-gray-600 mb-2">{t("subject.label")}</span>
         <input
           name="subject"
           value={form.subject}
           onChange={handleChange}
           className="px-4 py-3 rounded-lg border focus:ring-2 focus:ring-green-200 outline-none"
-          placeholder="Brief subject (optional)"
+          placeholder={t("subject.placeholder")}
         />
       </label>
 
       <label className="flex flex-col">
-        <span className="text-sm text-gray-600 mb-2">Message*</span>
+        <span className="text-sm text-gray-600 mb-2">{t("message.label")}</span>
         <textarea
           name="message"
           value={form.message}
@@ -88,7 +115,7 @@ export default function ContactForm() {
           required
           rows="6"
           className="px-4 py-3 rounded-lg border focus:ring-2 focus:ring-green-200 outline-none"
-          placeholder="Tell us about your project, needs or questions"
+          placeholder={t("message.placeholder")}
         />
       </label>
 
@@ -98,17 +125,20 @@ export default function ContactForm() {
           disabled={status.loading}
           className="inline-flex items-center justify-center bg-green-700 text-white px-5 py-3 rounded-full hover:bg-green-800 transition disabled:opacity-60"
         >
-          {status.loading ? 'Sending…' : 'Send message'}
+          {status.loading ? t("buttons.sending") : t("buttons.submit")}
         </button>
 
         <button
           type="button"
-          onClick={() => { setForm({ name: '', email: '', subject: '', message: '' }); setStatus({ loading: false, error: '', success: '' }) }}
+          onClick={() => {
+            setForm({ name: "", email: "", subject: "", message: "" });
+            setStatus({ loading: false, error: "", success: "" });
+          }}
           className="text-sm text-gray-600 underline"
         >
-          Reset
+          {t("buttons.reset")}
         </button>
       </div>
     </form>
-  )
+  );
 }

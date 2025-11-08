@@ -1,16 +1,19 @@
-
-'use client'
+"use client";
 import React from "react";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const Hero = () => {
-    const handleScroll = () => {
+  const t = useTranslations("hero");
+
+  const handleScroll = () => {
     const section = document.getElementById("about");
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
   return (
-    <section className="relative h-[700px] w-full flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center">
       {/* Background Image */}
       <img
         src="/images/2.png"
@@ -22,19 +25,27 @@ const Hero = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 md:px-12">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-4">
-          Natural Products <br className="hidden sm:block" />for  Lovers of <strong className="text-primary"> Healthy</strong> <br className="hidden sm:block" /> Organic Food
+      <div className="container mx-auto px-5 md:px-20 text-center text-white relative z-10">
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+          {t("title")}
         </h1>
-        <p className="text-white/80 text-base md:text-lg mb-8 max-w-2xl mx-auto">
-          Discover nature’s best — made with love and crafted for your wellbeing.
+        <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 opacity-90">
+          {t("subtitle")}
         </p>
-                <button
-          onClick={handleScroll}
-          className="bg-primary hover:bg-primary/90 transition-all duration-300 text-white font-semibold px-8 py-3 rounded-full shadow-lg cursor-pointer"
-        >
-          Discover More
-        </button>
+        <div className="flex items-center justify-center gap-4">
+          <Link
+            href="/services"
+            className="bg-primary text-white px-6 py-3 rounded-full hover:bg-green-700 transition"
+          >
+            {t("cta.primary")}
+          </Link>
+          <Link
+            href="/about"
+            className="px-6 py-3 rounded-full border border-white/30 hover:bg-white/10 transition"
+          >
+            {t("cta.secondary")}
+          </Link>
+        </div>
       </div>
     </section>
   );

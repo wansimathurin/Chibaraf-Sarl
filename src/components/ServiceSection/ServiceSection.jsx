@@ -1,36 +1,40 @@
-'use client'
-import { motion } from 'framer-motion'
-import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
-
-const services = [
-  {
-    id: 1,
-    title: 'Production',
-    desc: 'From seedlings to harvest, we manage every step with care to deliver high-quality, sustainable crops.',
-    image: '/images/about-2.jpg',
-  },
-  {
-    id: 2,
-    title: 'Storage',
-    desc: 'We provide safe and modern facilities for the preservation of raw products after harvest.',
-    image: '/images/service-storage.jpg',
-  },
-  {
-    id: 3,
-    title: 'Transformation',
-    desc: 'Our transformation units turn raw materials into finished products ready for consumption.',
-    image: '/images/service-processing.jpg',
-  },
-  {
-    id: 4,
-    title: 'Exportation',
-    desc: 'We proudly export agricultural products across West Africa — and soon to Europe.',
-    image: '/images/service-export.jpg',
-  },
-]
+"use client";
+import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
 const ServicesSection = () => {
+  const t = useTranslations("services");
+
+  const services = [
+    {
+      id: 1,
+      title: t("items.production.title"),
+      desc: t("items.production.desc"),
+      image: "/images/about-2.jpg",
+    },
+    {
+      id: 2,
+      title: t("items.storage.title"),
+      desc: t("items.storage.desc"),
+      image: "/images/service-storage.jpg",
+    },
+    {
+      id: 3,
+      title: t("items.transformation.title"),
+      desc: t("items.transformation.desc"),
+      image: "/images/service-processing.jpg",
+    },
+    {
+      id: 4,
+      title: t("items.export.title"),
+      desc: t("items.export.desc"),
+      image: "/images/service-export.jpg",
+    },
+  ];
+
   return (
     <section id="services" className="relative py-20 bg-white overflow-hidden">
       {/* Decorative Leaf Pattern */}
@@ -44,13 +48,14 @@ const ServicesSection = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h4 className="text-green-600 font-semibold uppercase mb-2">Our Services</h4>
+          <h4 className="text-green-600 font-semibold uppercase mb-2">
+            {t("tagline")}
+          </h4>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            What <span className="text-green-600">Chibaraf SARL</span> Offers
+            {t("title")}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-            From the soil to your table — Chibaraf SARL covers every step of the agricultural process 
-            with quality, passion, and commitment to sustainability.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -64,14 +69,13 @@ const ServicesSection = () => {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
             >
-              <div 
-                className="relative h-[350px] rounded-2xl overflow-hidden shadow-lg group cursor-pointer"
-              >
+              <div className="relative h-[350px] rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
                 {/* Background Image */}
-                <img 
+                <Image
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition duration-700 ease-out"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
 
                 {/* Overlay */}
@@ -79,12 +83,14 @@ const ServicesSection = () => {
 
                 {/* Content */}
                 <div className="absolute inset-0 flex flex-col justify-end p-6 text-left text-white">
-                  <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>
+                  <h3 className="text-2xl font-semibold mb-2">
+                    {service.title}
+                  </h3>
                   <p className="text-sm text-gray-200 mb-4">{service.desc}</p>
 
                   {/* Call to Action */}
-                  <Link 
-                    href="/contact" 
+                  <Link
+                    href="/contact"
                     className="inline-flex items-center gap-2 text-green-400 hover:text-white transition font-semibold"
                   >
                     Contact Us
@@ -97,7 +103,7 @@ const ServicesSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ServicesSection
+export default ServicesSection;

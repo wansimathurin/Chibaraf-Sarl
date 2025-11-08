@@ -1,0 +1,309 @@
+{
+  "contact": {
+    "meta": {
+      "title": "Contact — Chibaraf",
+      "description": "Get in touch with Chibaraf — partnership, supply, training and enquiries."
+    },
+    "hero": {
+      "tagline": "Let's create together",
+      "title": "Contact Chibaraf",
+      "subtitle": "Whether you're a farmer, buyer or partner — tell us about your needs and we'll respond within 48 hours."
+    },
+    "form": {
+      "section": {
+        "title": "Get in touch",
+        "heading": "Start a conversation",
+        "description": "Share a few details and we'll propose a plan, pricing and timeline tailored to your needs."
+      },
+      "response": {
+        "time": "Response time:",
+        "note": "Typically within 48 hours. For urgent matters call the phone number below."
+      },
+      "name": {
+        "label": "Name*",
+        "placeholder": "Your full name"
+      },
+      "email": {
+        "label": "Email*",
+        "placeholder": "you@company.com"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "Brief subject (optional)"
+      },
+      "message": {
+        "label": "Message*",
+        "placeholder": "Tell us about your project, needs or questions"
+      },
+      "buttons": {
+        "submit": "Send message",
+        "sending": "Sending…",
+        "reset": "Reset"
+      },
+      "validation": {
+        "required": "Please provide name, email and message.",
+        "success": "Thanks — we will get back to you shortly.",
+        "error": "Submission failed"
+      }
+    },
+    "details": {
+      "title": "Contact details",
+      "phone": "Phone",
+      "email": "Email",
+      "office": "Office",
+      "address": "Douala, Cameroon",
+      "hours": {
+        "title": "Working hours",
+        "weekdays": "Mon — Fri: 08:00 — 17:00",
+        "saturday": "Sat: 09:00 — 13:00"
+      }
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "metadata": {
+    "title": "Chibaraf - Sustainable Agriculture Solutions",
+    "description": "Leading sustainable agriculture in Africa through innovative farming, storage, transformation and export solutions.",
+    "keywords": [
+      "agriculture",
+      "sustainable farming",
+      "organic",
+      "export",
+      "Cameroon"
+    ],
+    "ogTitle": "Chibaraf - Transforming Agriculture in Africa",
+    "ogDescription": "Sustainable farming solutions from field to export",
+    "twitterTitle": "Chibaraf Agriculture",
+    "twitterDescription": "Sustainable farming solutions in Africa"
+  },
+  "hero": {
+    "title": "Innovative Agricultural Solutions",
+    "subtitle": "We transform agriculture through sustainable practices and innovative solutions",
+    "cta": {
+      "primary": "Our Services",
+      "secondary": "Learn More"
+    }
+  },
+  "about": {
+    "tagline": "About Us",
+    "title": "Leader in Sustainable Agriculture",
+    "description": "We are pioneers in developing sustainable agricultural solutions in Africa. Our approach combines proven traditional practices with modern innovations.",
+     "metaTitle": "About — Chibaraf",
+    "metaDescription": "Chibaraf — inspiring sustainable agriculture through creativity, community and care.",
+    "missionTitle": "Mission",
+    "missionHeading": "Feed communities with care",
+    "missionText": "Our mission is to produce nutritious food while protecting ecosystems and empowering smallholders.",
+    "missionButton": "Partner With Us",
+    "visionTitle": "Vision",
+    "visionHeading": "A future where agriculture restores",
+    "visionText": "We envision systems that regenerate land, nourish people and inspire the next generation of farmers.",
+    "cta": {
+      "primary": "Learn Our Story",
+      "secondary": "Contact Us"
+    },
+    "process": {
+      "tagline": "Our Approach",
+      "title": "Creativity meets responsibility",
+      "items": {
+        "regenerative": {
+          "title": "Regenerative Farming",
+          "desc": "Techniques that restore soil, increase biodiversity and yield healthier produce."
+        },
+        "innovation": {
+          "title": "Innovative Ideas",
+          "desc": "We blend tradition with innovation to design solutions that scale sustainably."
+        },
+        "community": {
+          "title": "Community First",
+          "desc": "We work with local partners and customers to build resilient food systems."
+        }
+      }
+    },
+    "stats": {
+      "years": { "number": "10+", "label": "Years Experience" },
+      "farmers": { "number": "500+", "label": "Partner Farmers" },
+      "hectares": { "number": "1000+", "label": "Hectares Cultivated" }
+    }
+  },
+  "services": {
+    "tagline": "Our Services",
+    "title": "What We Offer",
+    "description": "Comprehensive solutions from production to export",
+    "items": {
+      "production": {
+        "title": "Production",
+        "desc": "From seedlings to harvest, we manage every step with care to deliver high-quality, sustainable crops."
+      },
+      "storage": {
+        "title": "Storage",
+        "desc": "We provide safe and modern facilities for the preservation of raw products after harvest."
+      },
+      "transformation": {
+        "title": "Transformation",
+        "desc": "Our transformation units convert raw materials into finished products ready for consumption."
+      },
+      "export": {
+        "title": "Exportation",
+        "desc": "We proudly export agricultural products across West Africa — and soon to Europe."
+      }
+    },
+    "hero": {
+      "badge": "End-to-end agriculture services",
+      "title": "From seed to shipment — built on quality, traceability and impact",
+      "text": "Chibaraf provides hands-on production support, secure storage, value-adding transformation and reliable exportation — designed to grow farm incomes and assure buyers.",
+      "ctaPrimary": "Work with Chibaraf",
+      "ctaSecondary": "Read the details"
+    },
+    "badges": {
+      "production": "Production",
+      "storage": "Storage",
+      "transformation": "Transformation",
+      "exportation": "Exportation"
+    },
+    "deepDive": {
+      "subtitle": "Deep Dive",
+      "title": "What each service means for farmers and buyers",
+      "text": "Practical descriptions and outcomes — so partners know exactly what Chibaraf delivers at each stage of the value chain."
+    },
+    "sections": {
+      "production": {
+        "title": "Production",
+        "text": "We support nursery management, planting schedules, pest management and harvest optimization. Our agronomists work with producers to increase yield, improve quality and adopt regenerative practices.",
+        "points": [
+          "Seedling and transplant management",
+          "Crop calendars and rotation planning",
+          "On-farm advisory and quality checkpoints"
+        ],
+        "image": "/images/about-2.jpg"
+      },
+      "storage": {
+        "title": "Storage",
+        "text": "Post-harvest handling and modern storage reduce loss and protect value. We provide temperature-aware handling, pest control and traceable storage systems.",
+        "points": [
+          "Secure, humidity-controlled storage",
+          "Inventory & traceability systems",
+          "Post-harvest training for handlers"
+        ],
+        "image": "/images/service-storage.jpg"
+      },
+      "transformation": {
+        "title": "Transformation",
+        "text": "We add value through processing units that convert raw goods into market-ready products — improving margins for producers and reliability for buyers.",
+        "points": [
+          "Quality-controlled processing",
+          "Packaging to buyer specifications",
+          "Hygiene and food-safety protocols"
+        ],
+        "image": "/images/service-processing.jpg"
+      },
+      "exportation": {
+        "title": "Exportation",
+        "text": "We manage export logistics, compliance and buyer relations to ensure products arrive in excellent condition and meet all regulations.",
+        "points": [
+          "Export documentation & compliance",
+          "Cold chain coordination for perishables",
+          "Long-term buyer relationships & contracts"
+        ],
+        "image": "/images/service-export.jpg"
+      }
+    },
+    "cta": {
+      "title": "Ready to engage?",
+      "text": "Tell us which service you need and we'll propose a clear plan and pricing.",
+      "button": "Request a proposal"
+    }
+  
+  },
+  "team": {
+    "tagline": "Our Team",
+    "title": "Agricultural Experts",
+    "description": "A passionate team dedicated to transforming agriculture",
+    "members": {
+      "ceo": {
+        "name": "Jean Paul Kamdem",
+        "role": "Chief Executive Officer"
+      },
+      "operations": {
+        "name": "Aisha Ngoumba",
+        "role": "Operations Director"
+      },
+      "agronomy": {
+        "name": "Dr. Fatou Diallo",
+        "role": "Chief Agronomist"
+      }
+    }
+  },
+  "offers": {
+    "tagline": "What We Offer",
+    "title": "Comprehensive Agricultural Solutions",
+    "description": "From field to export, we provide end-to-end solutions for sustainable agriculture",
+    "items": {
+      "farming": {
+        "title": "Sustainable Farming",
+        "desc": "Implementation of regenerative farming practices that improve soil health and crop yields"
+      },
+      "storage": {
+        "title": "Modern Storage",
+        "desc": "State-of-the-art facilities ensuring proper preservation of agricultural products"
+      },
+      "processing": {
+        "title": "Value Processing",
+        "desc": "Converting raw materials into high-value finished products ready for market"
+      },
+      "export": {
+        "title": "Global Export",
+        "desc": "Reliable export services connecting African produce to international markets"
+      }
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Services",
+      "production": "Production",
+      "storage": "Storage",
+      "transformation": "Transformation",
+      "export": "Export"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Douala, Cameroon",
+      "email": "hello@chibaraf.com",
+      "phone": "+237 6567-890"
+    },
+    "copyright": "© 2025 Chibaraf. All rights reserved."
+  },
+  "testimonials": {
+    "tagline": "Testimonials",
+    "title": "What Clients Say",
+    "items": [
+      {
+        "quote": "Chibaraf's produce transformed our farm-to-table offering. Quality and service are outstanding — we couldn't be happier.",
+        "name": "Amina T.",
+        "role": "Restaurant Owner",
+        "rating": 5
+      },
+      {
+        "quote": "Reliable, sustainable and consistent. The team at Chibaraf truly understands organic agriculture.",
+        "name": "Samuel K.",
+        "role": "Wholesale Buyer",
+        "rating": 5
+      },
+      {
+        "quote": "Partnering with Chibaraf helped us scale with confidence — excellent products and communication.",
+        "name": "Lydia M.",
+        "role": "Cooperative Manager",
+        "rating": 4
+      }
+    ]
+  }
+}

@@ -1,11 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import React from "react";
 
 export default function AboutBanner() {
+  const t = useTranslations("about");
+
   return (
-    <header className="relative h-[60vh] md:h-[70vh] bg-[url('/images/about-1.jpg')] bg-cover bg-center flex items-center">
+    <header className="relative h-[85vh] md:h-[70vh] bg-[url('/images/about-1.jpg')] bg-cover bg-center flex items-center overflow-hidden">
       <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
       <div className="container mx-auto px-5 md:px-20 relative z-10 text-center text-white">
         <motion.h1
@@ -14,7 +17,7 @@ export default function AboutBanner() {
           transition={{ duration: 0.8 }}
           className="text-4xl md:text-6xl font-bold leading-tight mb-4"
         >
-          Inspiring Sustainable Agriculture
+          {t("title")}
         </motion.h1>
 
         <motion.p
@@ -23,8 +26,7 @@ export default function AboutBanner() {
           transition={{ delay: 0.15, duration: 0.8 }}
           className="max-w-2xl mx-auto text-lg md:text-xl opacity-90 mb-6"
         >
-          We cultivate ideas and fields — connecting people to nature with
-          creativity, responsible practices and bold innovation.
+          {t("description")}
         </motion.p>
 
         <motion.div
@@ -33,14 +35,14 @@ export default function AboutBanner() {
           transition={{ delay: 0.3 }}
           className="flex items-center justify-center gap-4"
         >
-          <a
-            href="#about"
+          <Link
+            href="/services"
             className="bg-primary text-white px-6 py-3 rounded-full hover:bg-green-700 transition"
           >
-            Learn Our Story
-          </a>
-          <Link href="contact" className="text-white/90 underline">
-            Contact Us
+            {t("cta.primary")}
+          </Link>
+          <Link href="/contact" className="text-white/90 underline">
+            {t("cta.secondary")}
           </Link>
         </motion.div>
       </div>

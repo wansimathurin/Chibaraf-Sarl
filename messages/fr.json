@@ -1,0 +1,308 @@
+{
+  "contact": {
+    "meta": {
+      "title": "Contact — Chibaraf",
+      "description": "Contactez Chibaraf — partenariat, approvisionnement, formation et renseignements."
+    },
+    "hero": {
+      "tagline": "Créons ensemble",
+      "title": "Contactez Chibaraf",
+      "subtitle": "Que vous soyez agriculteur, acheteur ou partenaire — partagez vos besoins et nous vous répondrons sous 48 heures."
+    },
+    "form": {
+      "section": {
+        "title": "Contactez-nous",
+        "heading": "Démarrez une conversation",
+        "description": "Partagez quelques détails et nous vous proposer"
+      },
+      "response": {
+        "time": "Délai de réponse :",
+        "note": "Généralement sous 48 heures. Pour les urgences, appelez le numéro ci-dessous."
+      },
+      "name": {
+        "label": "Nom*",
+        "placeholder": "Votre nom complet"
+      },
+      "email": {
+        "label": "Email*",
+        "placeholder": "vous@entreprise.com"
+      },
+      "subject": {
+        "label": "Sujet",
+        "placeholder": "Bref sujet (optionnel)"
+      },
+      "message": {
+        "label": "Message*",
+        "placeholder": "Parlez-nous de votre projet, vos besoins ou vos questions"
+      },
+      "buttons": {
+        "submit": "Envoyer le message",
+        "sending": "Envoi en cours…",
+        "reset": "Réinitialiser"
+      },
+      "validation": {
+        "required": "Veuillez fournir nom, email et message.",
+        "success": "Merci — nous vous répondrons prochainement.",
+        "error": "Échec de l'envoi"
+      }
+    },
+    "details": {
+      "title": "Coordonnées",
+      "phone": "Téléphone",
+      "email": "Email",
+      "office": "Bureau",
+      "address": "Douala, Cameroun",
+      "hours": {
+        "title": "Heures d'ouverture",
+        "weekdays": "Lun — Ven : 08:00 — 17:00",
+        "saturday": "Sam : 09:00 — 13:00"
+      }
+    }
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "metadata": {
+    "title": "Chibaraf - Solutions Agricoles Durables",
+    "description": "Leader de l'agriculture durable en Afrique à travers des solutions innovantes de culture, stockage, transformation et exportation.",
+    "keywords": [
+      "agriculture",
+      "agriculture durable",
+      "bio",
+      "exportation",
+      "Cameroun"
+    ],
+    "ogTitle": "Chibaraf - Transformer l'Agriculture en Afrique",
+    "ogDescription": "Solutions agricoles durables du champ à l'exportation",
+    "twitterTitle": "Chibaraf Agriculture",
+    "twitterDescription": "Solutions agricoles durables en Afrique"
+  },
+  "hero": {
+    "title": "Solutions Agricoles Innovantes",
+    "subtitle": "Nous transformons l'agriculture à travers des pratiques durables et des solutions innovantes",
+    "cta": {
+      "primary": "Nos Services",
+      "secondary": "En Savoir Plus"
+    }
+  },
+  "about": {
+    "tagline": "À Propos de Nous",
+    "title": "Leadeur en Agriculture Durable",
+    "description": "Nous sommes pionniers dans le développement de solutions agricoles durables en Afrique. Notre approche combine des pratiques traditionnelles éprouvées avec des innovations modernes.",
+    "cta": {
+      "primary": "Notre Histoire",
+      "secondary": "Contactez-nous"
+    },
+    "metaTitle": "À propos — Chibaraf",
+    "metaDescription": "Chibaraf — inspirer une agriculture durable grâce à la créativité, à la communauté et au soin.",
+    "missionTitle": "Mission",
+    "missionHeading": "Nourrir les communautés avec bienveillance",
+    "missionText": "Notre mission est de produire des aliments nutritifs tout en protégeant les écosystèmes et en autonomisant les petits exploitants agricoles.",
+    "missionButton": "Devenez partenaire",
+    "visionTitle": "Vision",
+    "visionHeading": "Un avenir où l’agriculture restaure",
+    "visionText": "Nous imaginons des systèmes qui régénèrent la terre, nourrissent les populations et inspirent la prochaine génération d’agriculteurs.",
+    "process": {
+      "tagline": "Notre Approche",
+      "title": "La créativité rencontre la responsabilité",
+      "items": {
+        "regenerative": {
+          "title": "Agriculture Régénérative",
+          "desc": "Techniques qui restaurent les sols, augmentent la biodiversité et produisent des cultures plus saines."
+        },
+        "innovation": {
+          "title": "Idées Innovantes",
+          "desc": "Nous mélangeons la tradition et l'innovation pour concevoir des solutions évolutives et durables."
+        },
+        "community": {
+          "title": "Communauté d'Abord",
+          "desc": "Nous travaillons avec des partenaires locaux et des clients pour construire des systèmes alimentaires résilients."
+        }
+      }
+    },
+    "stats": {
+      "years": { "number": "10+", "label": "Années d'Expérience" },
+      "farmers": { "number": "500+", "label": "Agriculteurs Partenaires" },
+      "hectares": { "number": "1000+", "label": "Hectares Cultivés" }
+    }
+  },
+  "services": {
+    "tagline": "Nos Services",
+    "title": "Ce Que Nous Offrons",
+    "description": "Des solutions complètes de la production à l'exportation",
+    "items": {
+      "production": {
+        "title": "Production",
+        "desc": "De la pépinière à la récolte, nous gérons chaque étape avec soin pour fournir des cultures durables de haute qualité."
+      },
+      "storage": {
+        "title": "Stockage",
+        "desc": "Nous fournissons des installations modernes et sûres pour la conservation des produits bruts après la récolte."
+      },
+      "transformation": {
+        "title": "Transformation",
+        "desc": "Nos unités de transformation convertissent les matières premières en produits finis prêts à la consommation."
+      },
+      "export": {
+        "title": "Exportation",
+        "desc": "Nous exportons fièrement des produits agricoles à travers l'Afrique de l'Ouest — et bientôt vers l'Europe."
+      }
+    },
+    "hero": {
+      "badge": "Services agricoles de bout en bout",
+      "title": "De la graine à l’expédition — fondé sur la qualité, la traçabilité et l’impact",
+      "text": "Chibaraf offre un accompagnement pratique à la production, un stockage sécurisé, une transformation à valeur ajoutée et une exportation fiable — conçus pour accroître les revenus agricoles et satisfaire les acheteurs.",
+      "ctaPrimary": "Travailler avec Chibaraf",
+      "ctaSecondary": "Lire les détails"
+    },
+    "badges": {
+      "production": "Production",
+      "storage": "Stockage",
+      "transformation": "Transformation",
+      "exportation": "Exportation"
+    },
+    "deepDive": {
+      "subtitle": "Approfondissement",
+      "title": "Ce que chaque service signifie pour les agriculteurs et les acheteurs",
+      "text": "Descriptions pratiques et résultats concrets — afin que les partenaires sachent exactement ce que Chibaraf apporte à chaque étape de la chaîne de valeur."
+    },
+    "sections": {
+      "production": {
+        "title": "Production",
+        "text": "Nous accompagnons la gestion des pépinières, les calendriers de plantation, la lutte intégrée et l’optimisation des récoltes. Nos agronomes travaillent aux côtés des producteurs pour augmenter les rendements, améliorer la qualité et adopter des pratiques régénératrices.",
+        "points": [
+          "Gestion des semis et repiquages",
+          "Calendriers et rotations culturales",
+          "Conseil agricole et contrôle qualité sur le terrain"
+        ],
+        "image": "/images/about-2.jpg"
+      },
+      "storage": {
+        "title": "Stockage",
+        "text": "La gestion post-récolte et les installations modernes réduisent les pertes et préservent la valeur. Nous offrons un stockage sous contrôle d’humidité, un suivi des lots et des formations pratiques.",
+        "points": [
+          "Stockage sécurisé et contrôlé",
+          "Systèmes de traçabilité et d’inventaire",
+          "Formation post-récolte pour le personnel"
+        ],
+        "image": "/images/service-storage.jpg"
+      },
+      "transformation": {
+        "title": "Transformation",
+        "text": "Nous ajoutons de la valeur via des unités de transformation qui convertissent les produits bruts en denrées prêtes à la vente — pour de meilleures marges et une qualité constante.",
+        "points": [
+          "Processus de transformation contrôlés",
+          "Emballage selon les spécifications clients",
+          "Protocoles d’hygiène et de sécurité alimentaire"
+        ],
+        "image": "/images/service-processing.jpg"
+      },
+      "exportation": {
+        "title": "Exportation",
+        "text": "Nous gérons la logistique, la conformité et les relations avec les acheteurs afin de garantir des livraisons conformes et en parfait état.",
+        "points": [
+          "Documentation et conformité à l’export",
+          "Chaîne du froid pour les produits périssables",
+          "Relations et contrats durables avec les acheteurs"
+        ],
+        "image": "/images/service-export.jpg"
+      }
+    },
+    "cta": {
+      "title": "Prêt à collaborer ?",
+      "text": "Indiquez-nous le service souhaité et nous vous proposerons un plan clair et un devis.",
+      "button": "Demander une proposition"
+    }
+  },
+  "team": {
+    "tagline": "Notre Équipe",
+    "title": "Experts en Agriculture",
+    "description": "Une équipe passionnée dédiée à la transformation de l'agriculture",
+    "members": {
+      "ceo": {
+        "name": "Jean Paul Kamdem",
+        "role": "Directeur Général"
+      },
+      "operations": {
+        "name": "Aisha Ngoumba",
+        "role": "Directrice des Opérations"
+      },
+      "agronomy": {
+        "name": "Dr. Fatou Diallo",
+        "role": "Chef Agronome"
+      }
+    }
+  },
+  "offers": {
+    "tagline": "Nos Offres",
+    "title": "Solutions Agricoles Complètes",
+    "description": "Du champ à l'exportation, nous fournissons des solutions intégrées pour une agriculture durable",
+    "items": {
+      "farming": {
+        "title": "Agriculture Durable",
+        "desc": "Mise en œuvre de pratiques agricoles régénératrices qui améliorent la santé des sols et les rendements"
+      },
+      "storage": {
+        "title": "Stockage Moderne",
+        "desc": "Installations à la pointe assurant une conservation optimale des produits agricoles"
+      },
+      "processing": {
+        "title": "Transformation",
+        "desc": "Conversion des matières premières en produits finis à haute valeur ajoutée"
+      },
+      "export": {
+        "title": "Exportation Mondiale",
+        "desc": "Services d'exportation fiables reliant les produits africains aux marchés internationaux"
+      }
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "Entreprise",
+      "about": "À Propos",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Services",
+      "production": "Production",
+      "storage": "Stockage",
+      "transformation": "Transformation",
+      "export": "Exportation"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Douala, Cameroun",
+      "email": "hello@chibaraf.com",
+      "phone": "+237 6567-890"
+    },
+    "copyright": "© 2025 Chibaraf. Tous droits réservés."
+  },
+  "testimonials": {
+    "tagline": "Témoignages",
+    "title": "Ce Que Disent Nos Clients",
+    "items": [
+      {
+        "quote": "Les produits de Chibaraf ont transformé notre offre de la ferme à la table. La qualité et le service sont exceptionnels.",
+        "name": "Amina T.",
+        "role": "Restauratrice",
+        "rating": 5
+      },
+      {
+        "quote": "Fiable, durable et constant. L'équipe de Chibaraf comprend vraiment l'agriculture biologique.",
+        "name": "Samuel K.",
+        "role": "Acheteur en Gros",
+        "rating": 5
+      },
+      {
+        "quote": "Le partenariat avec Chibaraf nous a aidés à nous développer avec confiance — excellents produits et communication.",
+        "name": "Lydia M.",
+        "role": "Gérante de Coopérative",
+        "rating": 4
+      }
+    ]
+  }
+}

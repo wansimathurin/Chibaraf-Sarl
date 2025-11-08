@@ -1,63 +1,86 @@
-'use client'
-import { motion } from 'framer-motion'
+"use client";
+import { useTranslations } from "next-intl";
+import Image from "next/image";
+import React from "react";
 
 const AboutSection = () => {
+  const t = useTranslations("about");
+
   return (
-    <section 
-      id="about" 
-      className="relative py-20  bg-white overflow-hidden"
-    >
-      {/* Decorative Leaf Pattern at Bottom */}
-      <div 
-        className="absolute bottom-0 md:-left-40 w-full h-50 bg-[url('/images/pattern-2.png')] bg-no-repeat bg-bottom  pointer-events-none"
-      ></div>
-
-      <div className="relative container mx-auto px-5 md:px-20 grid md:grid-cols-2 gap-10 items-center">
-        
-        {/* Left Text Content */}
-        <motion.div 
-          initial={{ opacity: 0, y: 40 }} 
-          whileInView={{ opacity: 1, y: 0 }} 
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <h4 className="text-green-600 font-semibold uppercase mb-2">About Us</h4>
-          <h2 className="text-4xl font-bold text-gray-900 leading-tight mb-6">
-            Leader in <span className="text-green-600">Agriculture</span> Market
+    <section id="about" className="py-20 bg-white">
+      <div className="container mx-auto px-5 md:px-20">
+        <div className="text-center mb-12">
+          <h4 className="text-green-600 font-semibold uppercase mb-2">
+            {t("tagline")}
+          </h4>
+          <h2 className="text-4xl font-bold text-gray-900 leading-tight">
+            {t("title")}
           </h2>
-          <p className="text-gray-600 mb-8">
-            We are pioneers in the organic agriculture industry, delivering high-quality 
-            products cultivated through eco-friendly and sustainable practices.  
-            Our mission is to connect people to nature through healthy food.
+          <p className="text-gray-600 max-w-3xl mx-auto mt-4">
+            {t("description")}
           </p>
-          <button className="bg-primary text-white px-6 py-3 rounded-full hover:bg-green-700 transition">
-            Learn More
-          </button>
-        </motion.div>
+        </div>
 
-        {/* Right Image Content */}
-        <motion.div 
-          className="relative flex gap-2 md:gap-6"
-          initial={{ opacity: 0, y: 40 }} 
-          whileInView={{ opacity: 1, y: 0 }} 
-          transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true }}
-        >
-          <img 
-            src="/images/about-1.jpg" 
-            alt="Farming" 
-            className="rounded-2xl shadow-lg w-1/2 h-[400px] object-cover"
-          />
-          <img 
-            src="/images/about-2.jpg" 
-            alt="Organic farm" 
-            className="rounded-2xl shadow-lg w-1/2 h-[500px] object-cover mt-10"
-          />
-        </motion.div>
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Image Grid */}
+          <div className="grid grid-cols-2 gap-4">
+            <div className="rounded-2xl overflow-hidden shadow-lg h-[300px]">
+              <Image
+                src="/images/about-1.jpg"
+                alt={t("title")}
+                width={800}
+                height={600}
+                className="w-full h-full object-cover"
+              />
+            </div>
 
+            <div className="rounded-2xl overflow-hidden shadow-lg h-[300px] mt-8">
+              <Image
+                src="/images/about-2.jpg"
+                alt={t("title")}
+                width={800}
+                height={600}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Stats */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="text-center p-6 rounded-2xl bg-gray-50">
+              <span className="block text-3xl font-bold text-green-600 mb-2">
+                {t("stats.years.number")}
+              </span>
+              <span className="text-gray-600">{t("stats.years.label")}</span>
+            </div>
+
+            <div className="text-center p-6 rounded-2xl bg-gray-50">
+              <span className="block text-3xl font-bold text-green-600 mb-2">
+                {t("stats.farmers.number")}
+              </span>
+              <span className="text-gray-600">{t("stats.farmers.label")}</span>
+            </div>
+
+            <div className="text-center p-6 rounded-2xl bg-gray-50">
+              <span className="block text-3xl font-bold text-green-600 mb-2">
+                {t("stats.hectares.number")}
+              </span>
+              <span className="text-gray-600">{t("stats.hectares.label")}</span>
+            </div>
+
+            <div className="flex items-center justify-center p-6 rounded-2xl bg-gray-50">
+              <div>
+                <h4 className="text-lg font-semibold mb-1">
+                  {t("cta.primary")}
+                </h4>
+                <p className="text-sm text-gray-600">{t("cta.secondary")}</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutSection
+export default AboutSection;
